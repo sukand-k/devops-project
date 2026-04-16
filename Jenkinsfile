@@ -2,12 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/sukand-k/devops-project.git'
-            }
-        }
-
         stage('Test') {
             steps {
                 bat 'python -m pip install --upgrade pip'
@@ -19,7 +13,7 @@ pipeline {
 
     post {
         always {
-            junit 'test-results.xml'
+            junit allowEmptyResults: true, testResults: 'test-results.xml'
         }
     }
 }
