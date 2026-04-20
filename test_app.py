@@ -1,4 +1,4 @@
 from app import add
 
 def test_add():
-    assert add(17, 3) == 20
+    assert add(27, 3) == 30
