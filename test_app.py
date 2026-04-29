@@ -7,7 +7,7 @@ def test_add():
 
 
 def test_subtract():
-    assert subtract(25, 5) == 20
+    assert subtract(20, 5) == 15
 
 
 def test_multiply():
