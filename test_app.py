@@ -11,7 +11,7 @@ def test_subtract():
 
 
 def test_multiply():
-    assert multiply(6, 5) == 30
+    assert multiply(7, 5) == 35
 
 
 def test_divide():
