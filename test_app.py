@@ -15,7 +15,7 @@ def test_multiply():
 
 
 def test_divide():
-    assert divide(20, 5) == 4
+    assert divide(20, 2) == 10
 
 
 def test_divide_by_zero():
